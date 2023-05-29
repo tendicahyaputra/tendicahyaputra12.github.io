@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>manajamen & sim2</title>
+</head>
+<body> 
+  <header>   
+    <ul class="nav-list">
+    <li class="nav-items">
+        <a href="#"class="nav-link" onclick="showPage('home')">
+            <spam class="nav-icon fa fa-home"></spam>
+            <spam class="nav-text">Home</spam>
+        </a>
+    </li>
+    <li class="nav-items">
+        <a href="#"class="nav-link" onclick="showPage('product')">
+            <spam class="nav-icon fa fa-cart-plus"></spam>
+            <spam class="nav-text">Product</spam>
+        </a>
+    </li>
+    <li class="nav-items">
+        <a href="#"class="nav-link" onclick="showPage('detail')">
+            <spam class="nav-icon fa fa-discord"></spam>
+            <spam class="nav-text">Details</spam>
+        </a> 
+    </li>
+    <li class="nav-items">
+        <a href="#"class="nav-link" onclick="showPage('contact')">
+            <spam class="nav-icon fa fa-contact-card"></spam>
+            <spam class="nav-text">Contact</spam>
+        </a>
+    </li>
+    </ul>
+</header>
+
+
+<div class="page" id="home" style="display: none;">
+<div class="container text-center " style="padding-top: 100px;">
+  <section id="hero">
+    <img src="images/buku2.jpg" alt="kuliner" style="width: 200px;"
+     class="d-block mx-auto">
+    <h3 class="display-5">Lot of books can explore!</h3>
+    <h4>You can read's it whatever you like or buy it!</h4>
+  </section>
+</div>
+</div>
+
+<div class="page" id="home" style="display: none;">
+<div class="container">
+  <section id="about">
+    <h3 class="text-center pt-2">Unlock every possibility!</h3>
+    <div class="row pt-3">
+      <div class="col-md-4 offset-md-2">
+        <p>Join our membership and unlock
+           every possibility! You can read as much as book as you can without problems!</p>
+      </div>
+      <div class="col-md-4">
+        <p>Only with Rp 50.000,- per month you can get
+           a guarantee :Read all the books without need to buy it.
+          Explore the older books on the library.
+          Have the cheapest price when you buy a book.</p>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+
+    <main>
+      <div class="page" id="product" style="display: none;">
+        <div class="container">
+            <h2 class="title">Product list</h2>
+        <div class="row">
+        <div class="col" onclick="buy('Buku hooked',22.000) ">
+            <img src="images/hooked.jpg" />
+            <h4>Buku Hooked 2013</h4>
+            <p>Rp 22.000,-</p>
+        </div>
+        <div class="col" onclick="buy('Buku the personal',30.000) ">
+            <img src="images/the personal ma.jpg " />
+            <h4>Buku The Personal Mba 2010</h4>
+            <p>Rp 30.000,-</p>
+        </div>
+        <div class="col" onclick="buy('Buku the design of everyday things',28,000)">
+            <img src="images/the design of everyday things.png" />
+            <h4>Buku The Design Of Everyday 1998</h4>
+            <p>Rp 28.000,-</p>
+        </div>
+        <div class="col" onclick="buy('Buku design grafis',30,000)">
+            <img src="images/design grafis.jpg" />
+            <h4>Buku Design Grafis 2013</h4>
+            <p>Rp 30.000,-</p>
+        </div>
+        <div class="col" onclick="buy('Buku dont make me things',32,000)">
+            <img src="images/dont make me think.jpg" />
+            <h4>Buku Don't Make Me Think 2000</h4>
+            <p>Rp 32.000,-</p>
+        </div>
+        <div class="col" onclick="buy('Buku marmut merah jambu',28,000)">
+            <img src="images/marmut merah jambu.jpg" />
+            <h4>Buku Marmut Merah Jambu 2010</h4>
+            <p>Rp 28.000,-</p>
+        </div>
+        <div class="col" onclick="buy('Buku mahasiswa koplak',28,000)">
+            <img src="images/mahasiswa-koplak.jpg" />
+            <h4>Buku Mahasiswa Koplak 2018</h4>
+            <p>Rp 28.000,-</p>
+        </div>
+        <div class="col" onclick="buy('Buku the psychology of money',28,000)">
+            <img src="images/The-Psychology-of-Money.jpg" />
+            <h4>Buku The Psychology Of Money 2020</h4>
+            <p>Rp 28.000,-</p>
+        </div>
+        <div class="col" onclick="buy('Buku cinta brontosaurus',28,000)">
+            <img src="images/Cinta_Brontosaurus.jpg" />
+            <h4>Buku Cinta Brontosaurus 2006</h4>
+            <p>Rp 28.000,-</p>
+        </div>
+        </div>
+      </div>
+    </main>
+
+<main>
+  <div class="page" id="detail" style="display: none;">
+    <div class="container">
+      <h2 class="title">Detail book</h2>
+      <div class="row">
+        <div class="col">
+          <img src="images/the design of everyday things.png">
+          <h4>The design of everyday things</h4>
+          <br>
+          <h3>Kesimpulan :</h3>
+            <p>Desain yang baik sebenarnya jauh lebih
+              untuk diperlihatkan daripada desain yang sangat
+              buruk,sebagian karena yang baik sangat sesuai 
+              dengan kebutuhan kita sehingga desain tsbt
+              tidak terlihat.Desain yang buruk,disisi lain
+              meneriakkan kekurangannya membuat dirinya sangat
+              terlihat.Buku ini dimaksudkan untuk mengubah pembaca
+              menjadi pengamat yang hebat dari desain modern.
+              Kombinasi keterampilan observasi yang baik dan 
+              prinsip desain yang baik adalah alat yang ampuh
+              ,yang digunakan semua orang bahkan orang yang bukan
+              desainer profesional.Mengapa? karena kita semua
+              desainer dalam arti bahwa kita semua dengan sengaja
+              mendesain hidup kita,kamar kita, dan cara kita melakukan
+              sesuatu.Salah satu tujuan buku ini adalah untuk
+              mengembalikan kendali pembaca atas produk-produk dalam
+              hidup dan mengetahui cara memilih.
+
+            </p>
+        </div>
+
+        <div class="col">
+          <img src="images/design grafis.jpg">
+          <h4>Design Grafis</h4>
+          <br>
+          <h3>Kesimpulan :</h3>
+            <p>
+
+              Dewasa ini, kemampuan desain grafis sangat 
+              dibutuhkan oleh banyak perusahaan sebagai 
+              kemampuan tambahan untuk segala lini perusahaan. 
+              Desain grafis sangat fundamental dalam bidang usaha 
+              seperti percetakan, periklanan, social media bahkan 
+              kuliner sekali pun. Secara garis besar, buku ini membahas
+              mengenai: • Pilar Keilmuan yang Wajib Dimiliki oleh Seorang
+              Desainer Grafis • Pentingnya Konsep bagi Para Desainer Grafis •
+              Langkah-langkah Desainer Memulai Usaha Desain Grafis • 
+              Langkah Berbisnis Desain Grafis secara Online • 
+              Prinsip-prinsip Dasar Desain Grafis • Dan lain-lain.
+              
+            </p>
+        </div>
+
+        <div class="col">
+          <img src="images/hooked.jpg">
+          <h4>Hooked</h4>
+          <br>
+          <h3>Kesimpulan :</h3>
+            <p>Ketika bangun tidur, banyak di antara
+              kita yang punya kebiasaan baru: mengecek 
+              telepon genggam, ingin tahu notifikasi apa
+              saja yang kita terima dari berbagai aplikasi
+              media sosial dan lainnya. Tanpa kita sadari
+              ada berbagai aplikasi di telepon pintar dan
+              komputer yang membentuk kebiasaan kita: Whatsapp,
+              Facebook, Instagram, dan banyak lainnya. Dalam sehari,
+              kita bisa berkali-kali menggunakan aplikasi-aplikasi 
+              itu. Buku ini menjelaskan fenomena tersebut dengan menjabarkan 
+              Model Kait, proses empat langkah yang digunakan aplikasi-aplikasi
+              yang sukses mempengaruhi perilaku pengguna. Tanpa perlu 
+              beriklan besar-besaran, konsumen terus terpikat dan berulangkali
+              menggunakan aplikasi-aplikasi itu. Buku ini juga memuat pengetahuan
+              praktis mengenai cara menimbulkan kebiasaan dan langkah-langkah 
+              membangun aplikasi yang mendorong orang menggunakannya berkali-kali.
+
+            </p>
+        </div>
+
+        <div class="col">
+          <img src="images/The-Psychology-of-Money.jpg">
+          <h4>The psychology of money</h4>
+          <br>
+          <h3>Kesimpulan :</h3>
+            <p>Melalui buku ini, Morgan memberikan pandangan
+               dan sarannya terkait investasi. Menurutnya,
+               setiap investor sebaiknya memilih strategi
+               yang berpeluang paling besar berhasil mencapai
+               tujuannya. Baik itu investasi reksadana indeks,
+               saham, atau instrumen keuangan lainnya perlu disesuaikan
+                dengan keadaan dan tujuan keuangan kamu.
+              Latihlah diri untuk melihat peluang dan selalu
+              tanamkan dalam benak bahwa tidak semua jenis investasi
+               cocok secara umum untuk semua orang.
+              Buku ini tidak menjelaskan secara detail
+               mengenai jenis-jenis investasi. Sebab, 
+               yang ingin disampaikan oleh Morgan dalam
+                buku ini adalah pendekatan secara psikologis memahami uang.
+
+            </p>
+        </div>
+
+        <div class="col">
+          <img src="images/the personal ma.jpg">
+          <h4>The personal mba</h4>
+          <br>
+          <h3>Kesimpulan :</h3>
+            <p>Personal MBA 10th Anniversary Edition
+              memberikan gambaran yang jelas tentang 
+              esensi dari setiap topik bisnis utama:
+               kewirausahaan, pengembangan produk, pemasaran,
+                penjualan, negosiasi, Akuntansi, Keuangan,
+                 produktivitas, komunikasi, psikologi, 
+                 kepemimpinan, desain sistem, analisis,
+                  dan manajemen operasi...semua dalam satu
+                   volume yang komprehensif.MBA pribadi akan 
+                   membantu anda melakukan pekerjaan besar,
+                    membuat keputusan yang baik, dan mengambil
+                     keuntungan penuh dari keterampilan Anda, 
+                     kemampuan, dan peluang yang tersedia-tidak 
+                     peduli apa yang anda lakukan (atau ingin lakukan) untuk hidup.
+
+            </p>
+        </div>
+
+        <div class="col">
+          <img src="images/dont make me think.jpg">
+          <h4>Dont make me think</h4>
+          <br>
+          <h3>Kesimpulan :</h3>
+            <p>Duit bukan hanya sebagai kebutuhan
+               untuk memenuhi transaksi jual saja,
+                tetapi bisa dijadikan sebagai alat
+                 pengontrol emosi. Seseorang yang memiliki
+                  duit yang cukup banyak akan mudah untuk 
+                  membeli hal-hal di luar kebutuhan seperti
+                   hobi mengoleksi sepatu, membeli perangkat
+                    elektronik, membeli Playstation, dan sebagainya. 
+                    Keinginan yang mudah untuk dimiliki itu akan membuat diri sendiri bahagia.
+
+            </p>
+        </div>
+
+        <div class="col">
+          <img src="images/marmut merah jambu.jpg">
+          <h4>Marmut merah jambu</h4>
+          <br>
+          <h3>Kesimpulan :</h3>
+            <p>Buku ini sangat cocok untuk
+              anak remaja yang haus akan bacaan
+              yang mengandung unsur komedi, karena 
+              sebagian besar buku ini merupakan lelucon. 
+              Selain itu buku ini juga menceritakan kisah
+                 cinta sang penulis dan itu bisa membuat 
+                 pembaca menjadi tertarik dengan buku ini. 
+                 Bahasa yang digunakan mudah dipahami karena 
+                 menggunakan bahasa sehari-hari, harganya juga
+                  tidak terlalu tinggi serta alur yang digunakan juga mudah dimengerti.
+
+            </p>
+        </div>
+
+        <div class="col">
+          <img src="images/Cinta_Brontosaurus.jpg">
+          <h4>Cinta brontosaurus</h4>
+          <br>
+          <h3>Kesimpulan :</h3>
+            <p>Novel Cinta Brontosaurus ini menceritakan
+               tentang kisah sehari-harinya seorang penulis
+                buku yang bernama Raditya Dika yang lahir pada
+                 tanggal 28 desember 1984, novel ini dimulai 
+                 dengan kisah cinta Raditya Dika saat duduk di bangku SD.
+              Ketika duduk di bangku SD, Raditya Dika menyukai
+               seorang anak perempuan di kelasnya yang bernama Lia.
+                Ia memutuskan menulis surat cinta pada gadis pujaannya itu. 
+                Agar terlihat keren, ia berencana menulis surat tersebut dalam bahasa Inggris.
+                 Ia bermaksud mengatakan "Aku memikirkanmu setiap malam" dalam bahasa Inggris.
+                  Sial, ia hanya tahu bunyinya, tak tahu bagaimana cara menulisnya.
+
+            </p>
+        </div>
+
+        <div class="col">
+          <img src="images/mahasiswa-koplak.jpg">
+          <h4>Mahasiswa koplak</h4>
+          <br>
+          <h3>Kesimpulan :</h3>
+            <p>Novel lanjutan dari Ketua Osis
+               Koplak ini menceritakan kisah cinta
+                yang banyak dibalut dengan komedi. 
+                Jika di novel pertamanya menceritakan Nurman, 
+                si ketua osis yang absurd, maka di novel kedua
+                 ini, Nurman naik kelas menjadi mahasiswa absurd.
+                  Pembaca akan dibuat syahdu, kemudian tertawa 
+                  di menit selanjutnya berkat lawakan unik ala Nurman. 
+                  Mahasiswa Koplak mampu membuat perasaan pembaca campur aduk.
+
+            </p>
+        </div>
+      </div>
+  </div>
+</div>
+</main>
+  </div>
+
+  <div class="page" id="contact" style="display: none;">
+    <div class="tabel">
+    <h1>Hubungi kami</h1>
+    <form>
+      <label for="name">Nama :</label>
+      <input type="text" id="name" name="name" placeholder="masukkan nama anda" required>
+
+      <label for="phone">Nomer telepon :</label>
+      <input type="text" id="phone" name="phone" placeholder="masukkan nomer telepon anda" required>
+
+      <label for="message">Pesanan :</label>
+      <input type="text" id="message" name="message" placeholder="tuliskan pesanan anda"required>
+
+      <input type="button" value="Kirim" onclick="sendWhatsAppMessage()">
+    </form>
+    </div>
+  </div>
+
+    <footer>
+        <p>Copywite<span id="year"></span>.Scoot</p>
+    </footer>
+
+    <script src="source.js"></script>
+</body>
+</html>
